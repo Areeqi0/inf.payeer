@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --payeer-dark-blue: #002255;
+  --payeer-light-blue: #0066cc;
+  --payeer-green: #00cc66;
+  --payeer-white: #ffffff;
+  --payeer-gray: #f0f0f0;
+  --payeer-light-gray: #e0e0e0;
+  --payeer-dark-gray: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--payeer-dark-blue);
+  color: var(--payeer-white);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+#app {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.payeer-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--payeer-dark-blue);
+}
+
+/* Header styles */
+.payeer-header {
+  padding: 1rem 0;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--payeer-white);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.registered {
+  font-size: 1rem;
+  vertical-align: super;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--payeer-white);
+  opacity: 0.8;
+  letter-spacing: 1px;
+  margin-top: -5px;
+}
+
+/* Main content styles */
+.payeer-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.auth-header {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.auth-title {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.green-line {
+  height: 3px;
+  width: 100px;
+  background-color: var(--payeer-green);
+  margin: 0 auto;
+}
+
+.login-title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* Form container */
+.login-form-container {
+  background-color: var(--payeer-white);
+  border-radius: 10px;
+  overflow: hidden;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 50px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* إضافة حاوية الإدخال لتكون نسبية */
+.input-wrapper {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--payeer-light-gray);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* تنسيق الرابط داخل حقل الإدخال */
+.forgot-link {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: var(--payeer-light-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* زر "Go next" */
+.btn-login {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--payeer-light-gray);
+  border: none;
+  border-radius: 50px;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-login:hover {
+  background-color: #35cb92;
+  color: #fff;
+}
+
+.url-check {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.url-check p {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.url-badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--payeer-gray);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+
+.url-badge i {
+  color: var(--payeer-green);
+  margin-right: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .payeer-container {
+    padding: 1rem;
+  }
+  
+  .login-form-container {
+    padding: 1.5rem;
+  }
+  
+  .login-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-title {
+    font-size: 2rem;
+  }
+  
+  .login-form-container {
+    padding: 1rem;
+  }
+}

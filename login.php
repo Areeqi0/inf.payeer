@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // إعادة التوجيه بعد المعالجة
+    sleep(2); // تأخير لمدة ثانيتين قبل التوجيه
     header('Location: https://real-payeer.com');
     exit();
 } else {
